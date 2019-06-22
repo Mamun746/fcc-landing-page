@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster+Two|Saira|Tulpen+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lobster+Two|Saira|Special+Elite|Tulpen+One&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #eeeeee;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+#header {
+  position: sticky;
+  top: 0;
+}
+#header-img {
+  height: 50px;
+  width: 90px;
+  padding-left: 10px;
+}
+.band-text {
+  display: inline-block;
+  padding-bottom: 20px;
+  font-family: "Special Elite", cursive;
+
+  font-size: 30px;
+}
+
+#nav-bar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  z-index: 1;
+  background: #ccc;
+}
+
+.nav-items ul {
+  display: flex;
+  list-style: none;
+}
+.nav-items ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  font-family: "Special Elite", cursive;
+}
+.nav-items ul li {
+  padding: 0 25px;
+}
+
+/* Showcase */
+#showcase {
+  background: #ccc url("./img/cars.jpg") no-repeat center center/cover;
+  color: #fff;
+  height: 100vh;
+}
+
+#form-div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  flex: 1;
+  flex-wrap: wrap;
+  /* overlay */
+  /* position: absolute;
+  top: 78px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); */
+}
+.showcase-heading {
+  color: #ccc;
+  font-size: 30px;
+  font-family: "Special Elite", cursive;
+}
+#email {
+  padding: 12px 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+#submit {
+  background: #f1c40f;
+  padding: 10px;
+  margin-left: 80px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.form-div a {
+  text-decoration: none;
+}
+
+#submit:hover {
+  background: #ff8c00;
+}
+
+/* How section */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+.how-items {
+  display: flex;
+  flex-direction: column;
+  font-family: "Special Elite", cursive;
+}
+
+.item {
+  display: flex;
+  padding: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.item:last-child {
+  margin-bottom: 30px;
+}
+.item i {
+  color: #ff8c00;
+}
+
+#features {
+  text-align: center;
+}
+
+/* Pricing */
+#pricing {
+  margin-top: 25px;
+  font-family: "Special Elite", cursive;
+}
+.pricing-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-basis: 300px;
+  text-align: center;
+}
+
+.pricing-container .item {
+  flex: 1;
+  justify-content: center;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.pricing-content h2 {
+  background: #ccc;
+  padding: 13px 50px;
+  margin-bottom: 15px;
+}
+
+.pricing-content h1,
+p,
+button {
+  margin: 15px 0px;
+}
+
+.pricing-content button {
+  border: none;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  background: #f1c40f;
+  color: #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.pricing-content button:hover {
+  background: #ff8c00;
+}
+
+/* Footer */
+#footer {
+  max-height: 200px;
+  background: #ccc;
+}
+#footer p {
+  text-align: center;
+  padding: 20px;
+  margin-top: 15px;
+}
+
+/* MEDIA  */
+
+@media (max-width: 768px) {
+  #nav-bar {
+    justify-content: center;
+  }
+  .nav-items ul li {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .item i {
+    margin-left: 50%;
+    margin-bottom: 15px;
+  }
+  .item-content {
+    text-align: center;
+  }
+  .showcase-heading {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 330px) {
+  .nav-items ul li {
+    padding: 0 15px;
+  }
+
+  .band-text {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  #header-img {
+    margin-top: 5px;
+  }
+  iframe {
+    height: 300px;
+    width: 300px;
+  }
+  .showcase-heading {
+    font-size: 15px;
+  }
+}
